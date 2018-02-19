@@ -1,0 +1,7 @@
+---
+# A list of zones
+zones:
+    - us-east
+    - us-west
+    - india-east
+    - india-west
