@@ -3,7 +3,6 @@ node {
                 
 			
 			sh """
-				set +x
 				
 				git clone 'https://github.com/hsomanat/consul-files.git' /Users/Shared/Jenkins/Home/workspace/consul-test
                         """  
