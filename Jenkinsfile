@@ -1,8 +1,1 @@
-// This shows a simple build wrapper example, using the AnsiColor plugin.
-node {
-    // This displays colors using the 'xterm' ansi color map.
-    ansiColor('xterm') {
-        // Just some echoes to show the ANSI color.
-        stage "\u001B[31mI'm Red\u001B[0m Now not"
-    }
-}
+sh "curl  --request PUT --data 'hello consul' https://127.0.0.1:8500/v1/kv/foo"
