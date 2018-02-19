@@ -9,7 +9,7 @@ node {
 			println "Setup local ${repo_name} repo"
 			sh """
 				set +x
-				git clone 'https://github.com/hsomanat/consul-files.git' $repo_loc
+				git clone 'https://github.com/hsomanat/consul-files.git' ${repo_loc}
                         """  
                 }
                    def contents = readFile $repo_loc/zones.yaml
