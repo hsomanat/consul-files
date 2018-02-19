@@ -1,7 +1,8 @@
 node {
         stage('build') {
                 String repo_name="consul-files"
-	        String repo_loc = "$WORKSPACE/${repo_name}"
+		env.WORKSPACE = pwd()
+	        String repo_loc = "${env.WORKSPACE}/${repo_name}"
 		if (fileExists(repo_loc)) {
 			println repo_loc + " already exists, do not clone"
 		} else {
